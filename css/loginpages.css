@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #F5F5F5;
+}
+
+.block{
+    width: 476px;
+    height: 319px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+  }
+
+.head{
+    width: 478px;
+    height: 11px;
+    background-color: #302E2E;
+    position:relative;
+    bottom: 1px;
+    right:1px;
+    margin: 0;
+}
+
+.logo{
+    width: 81px;
+    height: 33px;
+    text-align: center;
+    margin: 39px auto 25px;
+}
+
+.block input[type="text"],
+.block input[type="password"] {
+    width: 246px;
+    height: 38px;
+    font-size: 14px;
+    margin: 0 auto 21px;
+    padding-left: 22px;
+    border: 1px solid #979797;
+    outline: none;
+    color: #5C5C5C;
+}
+
+input::-moz-placeholder {
+    color: #B2B2B2; 
+}
+input::-webkit-input-placeholder {
+    color: #B2B2B2; 
+}
+
+.block .bottoms {
+    font-size: 14px;
+}
+
+.forgot {
+    color: #00C092;
+    cursor: pointer;
+}
+
+.block .bottoms input[type="submit"] {
+    width: 84px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 77px;
+    border: 0;
+    background: #302E2E;
+    color: white;
+    padding: 0;
+}
+
+p{
+    width: 270px;
+    text-align: start;
+    font-size: 14px;
+    color: #5C5C5C;
+    margin: -5px 0 24px 103px;
+}
+
+.block input[type="email"] {
+    width: 246px;
+    height: 38px;
+    font-size: 14px;
+    margin: 0 auto 24px;
+    padding-left: 22px;
+    border: 1px solid #979797;
+    outline: none;
+    color: #302E2E;
+}
+
+.block .bottoms input[name="Send"] {
+    font-size: 14px;
+    width: 98px;
+    margin-left: 174px;
+}

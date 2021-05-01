@@ -19,7 +19,7 @@ body{
     border: 1px solid #EAEAEA;
 }
 
-.navbar .page{
+.page{
     font-size: 18px;
     color: #464646;
     padding-top: 12px;
@@ -114,7 +114,6 @@ input[type="submit"][name="report"] {
     border-spacing: 0 10px;
 } 
 
-
 .head {
     color: #A6A6A6;
     font-weight: bold;
@@ -126,16 +125,17 @@ input[type="submit"][name="report"] {
     background: white;
 }
 
-td{
+.table td{
     border-top: 1px solid #EAEAEA;
     border-bottom: 1px solid #EAEAEA;
+    cursor: pointer;
 }
 
-td:first-child{
+.table td:first-child{
     border-left: 1px solid #EAEAEA;
 }
 
-td:last-child{
+.table td:last-child{
     border-right: 1px solid #EAEAEA;
 }
 

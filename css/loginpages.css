@@ -37,8 +37,7 @@ body {
 
 .block input[type="text"],
 .block input[type="password"] {
-    width: 246px;
-    height: 38px;
+    padding:12px 78px 12px 21px;
     font-size: 14px;
     margin: 0 auto 21px;
     padding-left: 22px;
@@ -54,7 +53,7 @@ input::-webkit-input-placeholder {
     color: #B2B2B2; 
 }
 
-.block .bottoms {
+.block .buttoms {
     font-size: 14px;
 }
 
@@ -63,15 +62,13 @@ input::-webkit-input-placeholder {
     cursor: pointer;
 }
 
-.block .bottoms input[type="submit"] {
-    width: 84px;
-    height: 35px;
+.block .buttoms input[type="submit"] {
+    padding: 10px 24px;
     cursor: pointer;
     margin-left: 77px;
     border: 0;
     background: #302E2E;
     color: white;
-    padding: 0;
 }
 
 p{
@@ -79,22 +76,21 @@ p{
     text-align: start;
     font-size: 14px;
     color: #5C5C5C;
-    margin: -5px 0 24px 103px;
+    margin: -5px 0 21px 103px;
 }
 
 .block input[type="email"] {
-    width: 246px;
-    height: 38px;
+    padding:12px 78px 12px 21px;
     font-size: 14px;
     margin: 0 auto 24px;
-    padding-left: 22px;
     border: 1px solid #979797;
     outline: none;
     color: #302E2E;
 }
 
-.block .bottoms input[name="Send"] {
+.block .buttoms input[name="Send"] {
+    padding:9px 14px;
     font-size: 14px;
-    width: 98px;
-    margin-left: 174px;
+    float: right;
+    margin-right: 102px;
 }

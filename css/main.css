@@ -35,6 +35,11 @@ body{
     padding-left: 19px;
 }
 
+.navbar .ava{
+    width: 45px;
+    height: 45px;
+}
+
 .main{
     width: 100px;
     height: 100vh;
@@ -93,6 +98,134 @@ input::-webkit-input-placeholder {
 
 .report{
     grid-column:3;
+}
+
+#modal{
+    background: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#modal:target{
+    display: block;
+}
+
+#modal .formContent{
+    width: 897px;
+    height: 724px;
+    border: 1px solid #EAEAEA;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: white;
+    padding:30px 30px 62px 62px;
+}
+
+#modal .formContent a{
+    float: right;
+}
+
+.formContent form{
+    font-size: 14px;
+}
+
+.formContent form h1{
+    font-size: 18px;
+    color: #464646;
+    margin: 20px 0 35px 0;
+}
+
+.formContent form td h1{
+    margin: 0;
+}
+
+.formContent form td{
+    padding: 0 15px 26px 0;
+    vertical-align: top;
+}
+
+.formContent form td label{
+    display:inline-block;
+    float:left;
+    padding-right:10px;
+    color: #989898;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.formContent form tr td p label{
+    padding-top: 0;
+}
+
+.formContent input[type="text"], .formContent textarea{
+    width: 645px;
+    height: 35px;
+    color: #989898;
+    border: 1px solid #979797;
+    padding-left: 18px;
+    outline: none;
+}
+
+.formContent textarea{
+    height: 140px;
+    resize: none;
+    padding-top: 12px;
+}
+
+.formContent select{
+    width: 268px;
+    height: 35px;
+    border: 1px solid #979797;
+    padding-left: 18px;
+    color: #464646;
+    outline: none;
+}
+
+ #vlosenia{
+    padding-bottom: 14px;
+}
+
+#chous{
+    padding-bottom: 49px ;
+}
+
+.formContent td img{
+    float: left;
+}
+
+.formContent .chous{
+    cursor: pointer;
+    color: #979797;
+    font-weight:normal;
+    padding-left: 23px;
+    background: white url(../images/paper-clip.svg) no-repeat 16px;
+    background-position: 0px
+}
+
+.formContent input[type="file"]{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.formContent input[type="submit"]{
+    width: 16%;
+    height: 40px;
+    border:0;
+    cursor: pointer;
+    background: #302E2E;
+    font-size: 14px;
+    color: white;
 }
 
 input[type="submit"][name="report"] {
@@ -185,11 +318,11 @@ input[type="submit"][name="report"] {
 }
 
 
-.organization{
+/* .organization{
     background: green;
     grid-row:1/4;
     grid-column:6;
-}
+} */
 
 .status{
     width: 130px;

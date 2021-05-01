@@ -6,6 +6,61 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
  </head>
  <body>
+     <div id="modal">
+         <div class="formContent">
+            <a href="#"><img src="images/cross.svg" alt="cross"></a>
+            <form action="#">
+                <h1>Новое обращение</h1>
+                <table>
+                    <tr>
+                        <td><label for="title">Тема:</label></td>
+                        <td><input type="text" id="title" name="title" value="Тема Обращения"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="PO">ПО:</label></td>
+                        <td>
+                            <select id="PO">
+                                <option>DATAPK</option>
+                                <option>Eplat4m</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="ModalPO">Модуль ПО:</label></td>
+                        <td>
+                            <select id="ModalPO">
+                                <option>Техническое обслуживание</option>
+                                <option>smth else</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p><label for="date">Дата:</label></p></td>
+                        <td><span id="date">22 апреля 2021</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="problem">Описание:</label></td>
+                        <td><textarea type="text" id="problem" name="problem" >Описание проблемы</textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="vlosenia"><h1>Вложения:</h1></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="chous">
+                            <label for="file" class="chous">Прикрепить файл</label>
+                            <input type="file" id="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="send" value="Отправить"></td>
+                    </tr>
+                </table>                
+            </form>
+         </div>
+     </div>
      <div class="navigation">
         <div class="main"> 
             <ul>
@@ -52,7 +107,7 @@
             <form class="search" action="" method="get">
                 <input name="search" placeholder="Поиск" type="search">
             </form>
-            <form class="report" action="">
+            <form class="report" action="#modal">
                 <input type="submit" name="report" value="+ Новое обращение">
             </form>
             <table class="table">

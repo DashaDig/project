@@ -1,0 +1,85 @@
+.main .appeal{
+    background: none;
+}
+
+.staff{
+    background-color: #535353;
+    padding:10px;
+    margin: -10px 0;
+}
+
+.table{
+    margin-right: 236px;
+}
+
+.fColumn {
+    width: 223px;
+    
+}
+
+.sColumn{
+    width: 231px;
+}
+
+.tColumn{
+    width: 231px;
+}
+
+.tColumn p{
+    vertical-align: 0;
+}
+
+.foColumn{
+    width: 170px;
+}
+
+.fiColumn{
+    width: 155px;
+}
+
+.acting{
+    background: #DAFAD8;
+    color: #8FC274;
+    width: 115px;
+}
+
+.noacting{
+    background: #FFD2D2;
+    color: #FC5F5F;
+    width: 131px;
+}
+
+ .newPersonal{
+    width: 515px;
+    height: 572px;
+    padding: 19px 19px 58px 19px;
+    text-align: center;
+}
+.newPersonal form h1{
+    margin: 39px 0 45px 0;
+}
+.newPersonal form table{
+    padding-left: 40px;
+    text-align:left;
+    padding-top: 45px;
+    padding-bottom: 14px;
+}
+
+.newPersonal form table td{
+    padding: 0 4px 28px 0;
+}
+.newPersonal form img{
+    cursor: pointer;
+}
+
+.newPersonal form input[type="text"],.newPersonal form input[type="email"]{
+    width: 312px;
+}
+
+.newPersonal form select{
+    width: 219px;
+}
+
+.newPersonal form input[type="submit"]{
+    width: 25%;
+}

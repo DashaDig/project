@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/personal.css">
+ </head>
+ <body>
+     <div id="modal">
+         <div class="formContent newPersonal">
+            <a href="#"><img src="images/cross.svg" alt="cross"></a>
+            <form action="#">
+                <h1>Добавление сотрудника</h1>
+                <img src="images/newAva.svg" alt="newAva">
+                <table>
+                    <tr>
+                        <td><label for="title">ФИО:</label></td>
+                        <td><input type="text" id="title" name="title" value="ФИО сотрудника"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Почта:</label></td>
+                        <td>
+                            <input type="email" id="email" name="email" value="Электронная почта">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="license">Лицензия:</label></td>
+                        <td>
+                            <select id="license">
+                                <option>№1453231</option>
+                                <option>№0000000</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>    
+                <input type="submit" name="send" value="+ Добавить">            
+            </form>
+         </div>
+     </div>
+     <div class="navigation">
+        <div class="main"> 
+            <ul>
+                <li>
+                    <a href="MainWindow.html">
+                        <img class="logo" src="images/logo.svg" alt="udv">
+                    </a>
+                </li>
+                <li>
+                    <a href="MainWindow.html">
+                        <img class="appeal" src="images/appeal.svg" alt="appeal">
+                    </a>
+                </li>
+                <li>
+                    <a href="Personal.html">
+                        <img class="staff" src="images/staff.svg" alt="staff">
+                    </a>
+                </li>
+                <li>
+                    <a href="CompanyInfo.html">
+                        <img class="settings" src="images/settings.svg" alt="settings">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="page">Список сотрудников</div>
+            <div class="rightMenu">
+               <ul>
+                   <li>
+                       <a href="AccountInfo.html">
+                           <img class="ava" src="images/avatar.svg" alt="avatar">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="login.html">
+                          <img src="images/exit.svg" alt="exit">
+                      </a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+        <div class="content">
+            <form class="search" action="" method="get">
+                <input name="search" placeholder="Поиск" type="search">
+            </form>
+            <form class="report" action="#modal">
+                <input type="submit" name="report" value="+ Добавить сотрудника">
+            </form>
+            <table class="table">
+                <tr class="head">
+                    <th class="emptyColumn"></th>
+                    <th class="fColumn">Сотрудник</th>
+                    <th class="sColumn">Статус</th>
+                    <th class="tColumn">Электронная почта</th>
+                    <th class="foColumn">Лицензия</th>
+                    <th class="fiColumn">Обращения</th>
+                </tr>
+                <tr class="report1" onclick="window.location.href='PersonalInfo.html'; return false">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="sColumn"><div class="status acting">Действующий</div></td>
+                    <td class="tColumn"><p>Ivanov@ivan.ru</p></td>
+                    <td class="foColumn"><p>№1453231</p></td>
+                    <td class="fiColumn"><p>15 обращений</p></td>
+                </tr>
+                <tr class="report1">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avaKostya.svg" alt="avatar">
+                        <p>Кочергин Константин</p>
+                    </td>
+                    <td class="sColumn"><div class="status acting">Действующий</div></td>
+                    <td class="tColumn"><p>Kochergin@kostya.ru</p></td>
+                    <td class="foColumn"><p>№1453231</p></td>
+                    <td class="fiColumn"><p>1 обращение</p></td>
+                </tr>
+                <tr class="report1">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванченко Иван</p>
+                    </td>
+                    <td class="sColumn"><div class="status noacting">Не действующий</div></td>
+                    <td class="tColumn"><p>Ivanchenko@ivan.ru</p></td>
+                    <td class="foColumn"><p>№1453231</p></td>
+                    <td class="fiColumn"><p>3 обращения</p></td>
+                </tr>
+            </table>
+            <div class="organization">
+
+            </div>
+        </div>
+     </div>
+ </body>
+</html>

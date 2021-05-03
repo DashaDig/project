@@ -17,8 +17,8 @@
 }
 
 .navigation .content{
-    grid-template: 39px auto 2.4% 1.2fr 72px / 3.95% 56% 1.08% 24%;
-    padding:1.08% 0 0 5.62%;
+    grid-template: 39px auto 2.4% 1.2fr 72px / 66px 56% 1.08% 24%;
+    padding:20px 0 0 74px;
 }
 
 .content a{

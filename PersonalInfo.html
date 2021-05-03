@@ -4,7 +4,8 @@
   <title></title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/report.css">
+  <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <link rel="stylesheet" type="text/css" href="css/personalInfo.css">
  </head>
  <body>
      <div class="navigation">
@@ -35,10 +36,10 @@
         <div class="navbar">
             <div class="page">
                 <div>
-                    <a href="MainWindow.html">Обращения</a>
+                    <a href="Personal.html">Список сотрудников</a>
                 </div>
                 <img src="images/GT.svg" alt="GT">
-                Добавление нового сотрудника
+                Иванов Иван
             </div>
             <div class="rightMenu">
                <ul>
@@ -56,7 +57,7 @@
            </div>
         </div>
         <div class="content">
-            <a href="MainWindow.html">
+            <a href="Personal.html">
                 <img src="images/arrow.svg" alt="arrow">
                 Назад
             </a>
@@ -66,59 +67,44 @@
                         <img src="images/avatar.svg" alt="avatar">
                     </div>
                     <div class="name">
-                        <h1>Добавление нового сотрудника</h1>
-                        Иванов Иван
-                        <span>обратился 22 апреля 2021</span>
+                        <div class="nametop">
+                            <h1>Иванов Иван</h1>
+                            <img src="images/edit.svg" alt="edit">
+                        </div>
+                        <div class="status acting">Действующий</div>
                     </div>
                 </div>
-                <div class="text">
-                    Возникли проблемы при добавлении нового сотрудника в систему.<br>
-                    Срок лицензии ещё не истёк, прилагаю документы.
+                <div class="personalInfo">
+                    <table>
+                        <tr>
+                            <td class="start">Электронная почта:</td>
+                            <td>Ivanov@ivan.ru</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Дата регистрации:</td>
+                            <td >2 февраля 2020</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Роль</td>
+                            <td>Представитель Заказчика</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Лицензия:</td>
+                            <td >№1453231</td>
+                        </tr>
+                    </table>
+                    <div class="control">
+                        <h1>Управление:</h1>
+                        <button class="first">Назначить владельцем</button>
+                        <div class="buttons">
+                            <button class="second">Заблокировать</button>
+                            <button class="third">Удалить</button>
+                        </div>
+                    </div>
                 </div>
-                <!-- <div>
-                    2 вложения:
-                    <a href="#">скриншот.png</a>
-                    <a href="#">договор.txt</a>
-                </div> -->
             </div>
-            <!-- <div class="comments">
-                мурр
+            <!-- <div class="organization">
             </div> -->
-            <div class="info">
-                <table>
-                    <tr>
-                        <td class="start">Дата обращения:</td>
-                        <td >22 апреля 2021</td>
-                    </tr>
-                    <tr>
-                        <td class="start">Дата обработки:</td>
-                        <td >—</td>
-                    </tr>
-                    <tr>
-                        <td class="start">Последние<br>изменения:</td>
-                        <td >22 апреля 2021</td>
-                    </tr>
-                    <tr>
-                        <td class="start">ПО:</td>
-                        <td><p class="status">DATAPK</p></td>
-                    </tr>
-                    <tr>
-                        <td class="start">Модуль:</td>
-                        <td >Техническое обслуживание</td>
-                    </tr>
-                    <tr>
-                        <td class="start">Статус:</td>
-                        <td><p class="status">Зарегистрировано</p></td>
-                    </tr>
-                    <tr>
-                        <td class="start"><p>Ответственный:</p></td>
-                        <td class="otvetsvenni">
-                            <img src="images/avaOtv.svg">
-                            <p>Пётр Петров</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
         </div>
      </div>
  </body>

@@ -64,8 +64,12 @@ body{
     margin: -10px 0;
 }
 
-.settings{
+.settings, .dicts{
     padding-top: 56px;
+}
+
+.stat{
+    padding-top: 46px;
 }
 
 .navigation{

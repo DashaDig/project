@@ -1,0 +1,89 @@
+.main .appeal {
+    background: none;
+}
+.content{
+    display: block;
+}
+.content div{
+    float: left;
+}
+
+.develop_info{
+    display: flex;
+    width: 611px;
+    height: 225px;
+    border: 1px solid #EAEAEA;
+    background-color: white;
+    padding: 43px 0 0 46px;
+    text-align: left;
+}
+.develop_info .ava{
+    width: 80px;
+    height: 80px;
+}
+.text_info{
+    padding-top: 4px;
+    padding-left: 28px;
+    display: block;
+}
+.head{
+    box-sizing: content-box;
+    display: flex;
+    height: 28px;
+    padding-bottom: 42px; 
+}
+.FIO{
+    font-size: 24px;
+    font-weight: bold;
+    color: #464646;
+}
+.edit{
+    margin: 7px 0px 0px 19px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    color: #BFBFBF;
+}
+td:first-child{
+    font-weight: 500;
+    color: #989898;
+    padding-right: 32px;
+}
+td{
+    color: #464646;
+    padding-bottom: 16px;
+}
+
+.change_password{
+    text-align: left;
+    width: 268px;
+    height: 225px;
+    border: 1px solid #EAEAEA;
+    background-color: white;
+    margin-left: 20px;
+    padding: 32px 0 0 36px;
+}
+
+.change_password > h1{
+    font-weight: 600;
+    font-size: 14px;
+    color: #464646;
+    padding-bottom: 28px;
+}
+
+input[type="password"]{
+    width: 196px;
+    height: 30px;
+    border: 1px solid #979797;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+input[type="button"]{
+    background-color: #302E2E;
+    color: #FFFFFF;
+    size: 12px;
+    padding: 7px 21px 9px 22px;
+    margin-top: 12px;
+    border: 0px;
+}

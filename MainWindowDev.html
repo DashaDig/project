@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/mainDev.css">
+ </head>
+ <body>
+     <div id="modal">
+         <div class="formContent">
+            <a href="#"><img src="images/cross.svg" alt="cross"></a>
+            <form action="#">
+                <h1>Новое обращение</h1>
+                <table>
+                    <tr>
+                        <td><label for="title">Тема:</label></td>
+                        <td><input type="text" id="title" name="title" value="Тема обращения"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="PO">ПО:</label></td>
+                        <td>
+                            <select id="PO">
+                                <option>DATAPK</option>
+                                <option>Eplat4m</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="ModalPO">Модуль ПО:</label></td>
+                        <td>
+                            <select id="ModalPO">
+                                <option>Техническое обслуживание</option>
+                                <option>smth else</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p><label for="date">Дата:</label></p></td>
+                        <td><span id="date">22 апреля 2021</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="problem">Описание:</label></td>
+                        <td><textarea type="text" id="problem" name="problem" >Описание проблемы</textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="vlosenia"><h1>Вложения:</h1></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="chous">
+                            <label for="file" class="chous">Прикрепить файл</label>
+                            <input type="file" id="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="send" value="Отправить"></td>
+                    </tr>
+                </table>                
+            </form>
+         </div>
+     </div>
+     <div class="navigation">
+        <div class="main"> 
+            <ul>
+                <li>
+                    <a href="MainWindow.html">
+                        <img class="logo" src="images/logo.svg" alt="udv">
+                    </a>
+                </li>
+                <li>
+                    <a href="MainWindowDev.html">
+                        <img class="appeal" src="images/appeal.svg" alt="appeal">
+                    </a>
+                </li>
+                <li>
+                    <a href="PersonalDev.html">
+                        <img class="staff" src="images/staff.svg" alt="staff">
+                    </a>
+                </li>
+                <li>
+                    <a href="CompaniesList.html">
+                        <img class="companies" src="images/companies.svg" alt="companies">
+                    </a>
+                </li>
+                <li>
+                    <a href="Stat.html">
+                        <img class="stat" src="images/stat.svg" alt="stat">
+                    </a>
+                </li>
+                <li>
+                    <a href="Dicts.html">
+                        <img class="dicts" src="images/dicts.svg" alt="dicts">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="page">Обращения</div>
+            <div class="rightMenu">
+               <ul>
+                   <li>
+                       <a href="AccountInfo.html">
+                           <img class="ava" src="images/avatar.svg" alt="avatar">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="login.html">
+                          <img src="images/exit.svg" alt="exit">
+                      </a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+        <div class="content">
+            <form class="search" action="" method="get">
+                <input name="search" placeholder="Поиск" type="search">
+            </form>
+            <table class="table">
+                <tr class="head">
+                    <th class="emptyColumn"></th>
+                    <th class="fColumn">Автор</th>
+                    <th class="f1Column">Организация</th>
+                    <th class="f2Column">Важность</th>
+                    <th class="sColumn">Тема</th>
+                    <th class="tColumn">Ответственный</th>
+                    <th class="foColumn">Статус</th>
+                    <th class="fiColumn">ПО</th>
+                    <th class="siColumn">Модуль</th>
+                    <th class="seColumn">Дата создания</th>
+                </tr>
+                <tr class="report1" onclick="window.location.href='ReportCardDev.html'; return false">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="f1Column">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="f2Column">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                    </td>
+                    <td class="sColumn"><p>Добавление нового сотрудника</p></td>
+                    <td class="tColumn">
+                        <img src="images/avaOtv.svg" alt="avatar">
+                        <p>Пётр Петров</p>
+                    </td>
+                    <td class="foColumn"><div class="status">Зарегистрировано</div></td>
+                    <td class="fiColumn"><p>DATAPK</p></td>
+                    <td class="siColumn"><p>Техническое обслуживание</p></td>
+                    <td class="seColumn"><p>22 апреля 2021</p></td>
+                </tr>
+                <tr class="report1" onclick="window.location.href='ReportCardDev.html'; return false">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="f1Column">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="f2Column">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                    </td>
+                    <td class="sColumn"><p>Добавление нового сотрудника</p></td>
+                    <td class="tColumn">
+                        <img src="images/avaOtv.svg" alt="avatar">
+                        <p>Пётр Петров</p>
+                    </td>
+                    <td class="foColumn"><div class="status">Зарегистрировано</div></td>
+                    <td class="fiColumn"><p>DATAPK</p></td>
+                    <td class="siColumn"><p>Техническое обслуживание</p></td>
+                    <td class="seColumn"><p>22 апреля 2021</p></td>
+                </tr>
+                <tr class="report1" onclick="window.location.href='ReportCardDev.html'; return false">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="f1Column">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="f2Column">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                    </td>
+                    <td class="sColumn"><p>Добавление нового сотрудника</p></td>
+                    <td class="tColumn">
+                        <img src="images/avaOtv.svg" alt="avatar">
+                        <p>Пётр Петров</p>
+                    </td>
+                    <td class="foColumn"><div class="status">Зарегистрировано</div></td>
+                    <td class="fiColumn"><p>DATAPK</p></td>
+                    <td class="siColumn"><p>Техническое обслуживание</p></td>
+                    <td class="seColumn"><p>22 апреля 2021</p></td>
+                </tr>
+                <tr class="report1" onclick="window.location.href='ReportCardDev.html'; return false">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="f1Column">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="f2Column">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                    </td>
+                    <td class="sColumn"><p>Добавление нового сотрудника</p></td>
+                    <td class="tColumn">
+                        <img src="images/avaOtv.svg" alt="avatar">
+                        <p>Пётр Петров</p>
+                    </td>
+                    <td class="foColumn"><div class="status">Зарегистрировано</div></td>
+                    <td class="fiColumn"><p>DATAPK</p></td>
+                    <td class="siColumn"><p>Техническое обслуживание</p></td>
+                    <td class="seColumn"><p>22 апреля 2021</p></td>
+                </tr>
+                <tr class="report1" onclick="window.location.href='ReportCardDev.html'; return false">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="f1Column">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="f2Column">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                        <img src="images/stargold.svg" alt="star gold">
+                    </td>
+                    <td class="sColumn"><p>Добавление нового сотрудника</p></td>
+                    <td class="tColumn">
+                        <img src="images/avaOtv.svg" alt="avatar">
+                        <p>Пётр Петров</p>
+                    </td>
+                    <td class="foColumn"><div class="status">Зарегистрировано</div></td>
+                    <td class="fiColumn"><p>DATAPK</p></td>
+                    <td class="siColumn"><p>Техническое обслуживание</p></td>
+                    <td class="seColumn"><p>22 апреля 2021</p></td>
+                </tr>
+            </table>
+            <!-- <div class="organization">
+            </div> -->
+        </div>
+     </div>
+ </body>
+</html>

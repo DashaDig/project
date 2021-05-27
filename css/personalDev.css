@@ -1,0 +1,11 @@
+.navigation .content {
+    grid-template: 35px 26px 1fr 85px / 200px 62px 180px 155px 2.6% 21.1% 
+}
+
+.content .table{
+    grid-column: 1/7;
+}
+
+.newPersonal{
+    height: 372px;
+}

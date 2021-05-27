@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/report.css">
+  <link rel="stylesheet" type="text/css" href="css/reportdev.css">
  </head>
  <body>
      <div class="navigation">
@@ -16,18 +17,28 @@
                     </a>
                 </li>
                 <li>
-                    <a href="MainWindow.html">
+                    <a href="MainWindowDev.html">
                         <img class="appeal" src="images/appeal.svg" alt="appeal">
                     </a>
                 </li>
                 <li>
-                    <a href="Personal.html">
+                    <a href="PersonalDev.html">
                         <img class="staff" src="images/staff.svg" alt="staff">
                     </a>
                 </li>
                 <li>
-                    <a href="CompanyInfo.html">
-                        <img class="settings" src="images/settings.svg" alt="settings">
+                    <a href="CompaniesList.html">
+                        <img class="companies" src="images/companies.svg" alt="companies">
+                    </a>
+                </li>
+                <li>
+                    <a href="Stat.html">
+                        <img class="stat" src="images/stat.svg" alt="stat">
+                    </a>
+                </li>
+                <li>
+                    <a href="Dicts.html">
+                        <img class="dicts" src="images/dicts.svg" alt="dicts">
                     </a>
                 </li>
             </ul>
@@ -35,7 +46,7 @@
         <div class="navbar">
             <div class="page">
                 <div>
-                    <a href="MainWindow.html">Обращения</a>
+                    <a href="MainWindowDev.html">Обращения</a>
                 </div>
                 <img src="images/GT.svg" alt="GT">
                 Добавление нового сотрудника
@@ -43,7 +54,7 @@
             <div class="rightMenu">
                <ul>
                    <li>
-                       <a href="AccountInfo.html">
+                       <a href="AccountInfoDev.html">
                            <img class="ava" src="images/avatar.svg" alt="avatar">
                       </a>
                   </li>
@@ -56,7 +67,7 @@
            </div>
         </div>
         <div class="content">
-            <a href="MainWindow.html">
+            <a href="MainWindowDev.html">
                 <img src="images/arrow.svg" alt="arrow">Назад
             </a>
             <div class="thatReport">
@@ -69,11 +80,11 @@
                     <span>обратился 22 апреля 2021</span>
                 </div>
                 <div class="rating">
-                    <img src="images/star gold.svg" alt="star gold">
-                    <img src="images/star gold.svg" alt="star gold">
-                    <img src="images/star gold.svg" alt="star gold">
-                    <img src="images/star gold.svg" alt="star gold">
-                    <img src="images/star gold.svg" alt="star gold">
+                    <img src="images/stargold.svg" alt="star gold">
+                    <img src="images/stargold.svg" alt="star gold">
+                    <img src="images/stargold.svg" alt="star gold">
+                    <img src="images/stargold.svg" alt="star gold">
+                    <img src="images/stargold.svg" alt="star gold">
                 </div>
                 <div class="text">
                     Возникли проблемы при добавлении нового сотрудника в систему.<br>
@@ -126,6 +137,7 @@
                 </div>
             </div>
             <div class="info">
+                <h1>Информация:</h1>
                 <table>
                     <tr>
                         <td class="start">Дата обращения:</td>
@@ -159,6 +171,66 @@
                         </td>
                     </tr>
                 </table>
+                <h1>Управление:</h1>
+                <table>
+                    <tr>
+                        <td class="start control">ПО:</td>
+                        <td>
+                            <select id="PO">
+                                <option>DATAPK</option>
+                                <option>Eplat4m</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="start control">Модуль ПО:</td>
+                        <td>
+                            <select id="ModalPO">
+                                <option>Техническое обслуживание</option>
+                                <option>smth else</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="start control">Статус:</td>
+                        <td>
+                            <select id="ModalPO">
+                                <option>Зарегистрировано</option>
+                                <option>Переоткрыто</option>
+                                <option>В работе</option>
+                                <option>Закрыто</option>
+                                <option>Отклонено</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="start control">Ответственный:</td>
+                        <td>
+                            <select id="ModalPO">
+                                <option>Пётр Петров</option>
+                                <option>smth else</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="start control">Важность:</td>
+                        <td>
+                            <div class="rating">
+                                <input type="radio" name="rating" id="rating-5">
+                                <label for="rating-5"></label>
+                                <input type="radio" name="rating" id="rating-4">
+                                <label for="rating-4"></label>
+                                <input type="radio" name="rating" id="rating-3">
+                                <label for="rating-3"></label>
+                                <input type="radio" name="rating" id="rating-2">
+                                <label for="rating-2"></label>
+                                <input type="radio" name="rating" id="rating-1" checked>
+                                <label for="rating-1"></label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="update" value="Обновить">
             </div>
         </div>
      </div>

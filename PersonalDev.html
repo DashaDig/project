@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <link rel="stylesheet" type="text/css" href="css/personalDev.css">
  </head>
  <body>
      <div id="modal">
@@ -23,15 +24,6 @@
                             <input type="email" id="email" name="email" placeholder="Электронная почта">
                         </td>
                     </tr>
-                    <tr>
-                        <td><label for="license">Лицензия:</label></td>
-                        <td>
-                            <select id="license">
-                                <option>№1453231</option>
-                                <option>№0000000</option>
-                            </select>
-                        </td>
-                    </tr>
                 </table>    
                 <input type="submit" name="send" value="+ Добавить">            
             </form>
@@ -46,18 +38,28 @@
                     </a>
                 </li>
                 <li>
-                    <a href="MainWindow.html">
+                    <a href="MainWindowDev.html">
                         <img class="appeal" src="images/appeal.svg" alt="appeal">
                     </a>
                 </li>
                 <li>
-                    <a href="Personal.html">
+                    <a href="PersonalDev.html">
                         <img class="staff" src="images/staff.svg" alt="staff">
                     </a>
                 </li>
                 <li>
-                    <a href="CompanyInfo.html">
-                        <img class="settings" src="images/settings.svg" alt="settings">
+                    <a href="CompaniesList.html">
+                        <img class="companies" src="images/companies.svg" alt="companies">
+                    </a>
+                </li>
+                <li>
+                    <a href="Stat.html">
+                        <img class="stat" src="images/stat.svg" alt="stat">
+                    </a>
+                </li>
+                <li>
+                    <a href="Dicts.html">
+                        <img class="dicts" src="images/dicts.svg" alt="dicts">
                     </a>
                 </li>
             </ul>
@@ -90,20 +92,16 @@
                 <tr class="head">
                     <th class="emptyColumn"></th>
                     <th class="fColumn">Сотрудник</th>
-                    <th class="sColumn">Статус</th>
                     <th class="tColumn">Электронная почта</th>
-                    <th class="foColumn">Лицензия</th>
-                    <th class="fiColumn">Обращения</th>
+                    <th class="fiColumn">В работе</th>
                 </tr>
-                <tr class="report1" onclick="window.location.href='PersonalInfo.html'; return false">
+                <tr class="report1" onclick="window.location.href='PersonalInfoDev.html'; return false">
                     <td class="emptyColumn"></td>
                     <td class="fColumn">
                         <img src="images/avatar.svg" alt="avatar">
                         <p>Иванов Иван</p>
                     </td>
-                    <td class="sColumn"><div class="status acting">Действующий</div></td>
                     <td class="tColumn"><p>Ivanov@ivan.ru</p></td>
-                    <td class="foColumn"><p>№1453231</p></td>
                     <td class="fiColumn"><p>15 обращений</p></td>
                 </tr>
                 <tr class="report1">
@@ -112,9 +110,7 @@
                         <img src="images/avaKostya.svg" alt="avatar">
                         <p>Кочергин Константин</p>
                     </td>
-                    <td class="sColumn"><div class="status acting">Действующий</div></td>
                     <td class="tColumn"><p>Kochergin@kostya.ru</p></td>
-                    <td class="foColumn"><p>№1453231</p></td>
                     <td class="fiColumn"><p>1 обращение</p></td>
                 </tr>
                 <tr class="report1">
@@ -123,14 +119,10 @@
                         <img src="images/avatar.svg" alt="avatar">
                         <p>Иванченко Иван</p>
                     </td>
-                    <td class="sColumn"><div class="status noacting">Не действующий</div></td>
                     <td class="tColumn"><p>Ivanchenko@ivan.ru</p></td>
-                    <td class="foColumn"><p>№1453231</p></td>
                     <td class="fiColumn"><p>3 обращения</p></td>
                 </tr>
             </table>
-            <!-- <div class="organization">
-            </div> -->
         </div>
      </div>
  </body>

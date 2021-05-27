@@ -1,0 +1,13 @@
+.main .staff{
+    background: none;
+}
+
+.companies{
+    background-color: #535353;
+    padding:10px;
+    margin: -10px 0;
+}
+
+.tColumn p {
+    vertical-align: 9px;
+}

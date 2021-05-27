@@ -2,6 +2,10 @@
     background: none;
 }
 
+.content a img{
+    padding-right: 4px;
+}
+
 .staff{
     background-color: #535353;
     padding:10px;
@@ -40,7 +44,7 @@
     grid-row:2;
     background: white;
     border: 1px solid #EAEAEA;
-    padding: 38px 0 38px 40px;
+    padding: 42px 0 38px 50px;
     text-align: left;
     display: flex;
     flex-flow: column nowrap;

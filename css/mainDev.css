@@ -1,0 +1,26 @@
+.navigation .content{
+    grid-template: 35px 26px 1fr 85px / 200px 1fr 123px;
+}
+
+.f1Column{
+    min-width: 211px;
+}
+
+.f1Column p{
+    display: inline-block;
+    vertical-align: 9px;
+}
+
+.f2Column{
+    min-width: 147px;
+}
+
+.f2Column img{
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+}
+
+.content .table{
+    grid-column: 1/3;
+}

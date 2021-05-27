@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <link rel="stylesheet" type="text/css" href="css/сompaniesList.css">
+ </head>
+ <body>
+     <div id="modal">
+         <div class="formContent newPersonal">
+            <a href="#"><img src="images/cross.svg" alt="cross"></a>
+            <form action="#">
+                <h1>Добавление организации</h1>
+                <table>
+                    <tr>
+                        <td><label for="title">Название:</label></td>
+                        <td><input type="text" id="title" name="title" placeholder="Название организации"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="license">Лицензия:</label></td>
+                        <td>
+                            <select id="license">
+                                <option>Отсутствует</option>
+                                <option>№1453231</option>
+                                <option>№0000000</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <form class="report" action="#modal2">
+                    <input type="submit" name="next" value="Далее"> 
+                </form>  
+            </form>
+         </div>
+     </div>
+     <div id="modal2">
+        <div class="formContent newPersonal">
+           <a href="#"><img src="images/cross.svg" alt="cross"></a>
+           <form action="#">
+               <h1>Добавление представителя организации</h1>
+               <table>
+                   <tr>
+                       <td><label for="title">ФИО:</label></td>
+                       <td><input type="text" id="title" name="title" placeholder="ФИО представителя"></td>
+                   </tr>
+                   <tr>
+                        <td><label for="email">Почта:</label></td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Электронная почта">
+                        </td>
+                    </tr>
+               </table>    
+               <input type="submit" name="send" value="Далее">            
+           </form>
+        </div>
+    </div>
+     <div class="navigation">
+        <div class="main"> 
+            <ul>
+                <li>
+                    <a href="MainWindow.html">
+                        <img class="logo" src="images/logo.svg" alt="udv">
+                    </a>
+                </li>
+                <li>
+                    <a href="MainWindowDev.html">
+                        <img class="appeal" src="images/appeal.svg" alt="appeal">
+                    </a>
+                </li>
+                <li>
+                    <a href="PersonalDev.html">
+                        <img class="staff" src="images/staff.svg" alt="staff">
+                    </a>
+                </li>
+                <li>
+                    <a href="CompaniesList.html">
+                        <img class="companies" src="images/companies.svg" alt="companies">
+                    </a>
+                </li>
+                <li>
+                    <a href="Stat.html">
+                        <img class="stat" src="images/stat.svg" alt="stat">
+                    </a>
+                </li>
+                <li>
+                    <a href="Dicts.html">
+                        <img class="dicts" src="images/dicts.svg" alt="dicts">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="page">Список организаций</div>
+            <div class="rightMenu">
+               <ul>
+                   <li>
+                       <a href="AccountInfo.html">
+                           <img class="ava" src="images/avatar.svg" alt="avatar">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="login.html">
+                          <img src="images/exit.svg" alt="exit">
+                      </a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+        <div class="content">
+            <form class="search" action="" method="get">
+                <input name="search" placeholder="Поиск" type="search">
+            </form>
+            <form class="report" action="#modal">
+                <input type="submit" name="report" value="+ Добавить организацию">
+            </form>
+            <table class="table">
+                <tr class="head">
+                    <th class="emptyColumn"></th>
+                    <th class="fColumn">Организация</th>
+                    <th class="sColumn">Статус</th>
+                    <th class="tColumn">Владелец</th>
+                    <th class="foColumn">Представители</th>
+                </tr>
+                <tr class="report1" onclick="window.location.href='PersonalInfo.html'; return false">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="sColumn"><div class="status acting">Действующий</div></td>
+                    <td class="tColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="foColumn"><p>29 сотрудников</p></td>
+                </tr>
+                <tr class="report1">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="sColumn"><div class="status acting">Действующий</div></td>
+                    <td class="tColumn">
+                        <img src="images/avaKostya.svg" alt="avatar">
+                        <p>Кочергин Константин</p>
+                    </td>
+                    <td class="foColumn"><p>8 сотрудников</p></td>
+                </tr>
+                <tr class="report1">
+                    <td class="emptyColumn"></td>
+                    <td class="fColumn">
+                        <img src="images/organization.svg" alt="organization">
+                        <p>ООО "Крокодилы"</p>
+                    </td>
+                    <td class="sColumn"><div class="status noacting">Не действующий</div></td>
+                    <td class="tColumn">
+                        <img src="images/avatar.svg" alt="avatar">
+                        <p>Иванов Иван</p>
+                    </td>
+                    <td class="foColumn"><p>5 сотрудников</p></td>
+                </tr>
+            </table>
+        </div>
+     </div>
+ </body>
+</html>

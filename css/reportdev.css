@@ -1,0 +1,80 @@
+.navigation .content{
+    grid-template: 39px auto 2.4% 478px auto 72px / 66px 56% 1.08% 29%;
+}
+
+.content .comments{
+    grid-row: 4/6;
+}
+
+
+.content .info{
+    padding-top: 28px;
+    padding-left: 20px;
+}
+
+.info{
+    grid-row: 2/5;
+}
+
+.info h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: #464646;
+    padding: 12px 0 1px 20px;
+}
+
+.info select{
+    width: 268px;
+    height: 35px;
+    border: 1px solid #979797;
+    padding-left: 18px;
+    color: #464646;
+    outline: none;
+    cursor: pointer;
+}
+
+.control{
+    padding-top: 10px;
+}
+
+.rating {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    position: relative;
+}
+  
+.rating > input {
+    display: none;
+}
+  
+.rating > label {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/star.svg);
+    background-repeat: no-repeat;
+    background-size: 76%;
+    transition: .3s;
+}
+    
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url(../images/stargold.svg);
+}
+
+.info input[type="submit"]{
+    float: right;
+    padding: 12px 20px;
+    margin-right: 34px;
+    border:0;
+    cursor: pointer;
+    background: #302E2E;
+    font-size: 14px;
+    color: white;
+    grid-row: 2;
+    grid-column: 2;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/dicts.css">
+ </head>
+ <body>
+     <script>
+        let expanded = false;
+        
+        function showCheckboxes() {
+            let checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                let moduls = document.querySelector('#moduls>option');
+                let modulsList = document.querySelectorAll('#checkboxes>label');
+                result = [];
+                for(let modul of modulsList)
+                    if(modul.querySelector('input').checked)
+                        result.push(modul.querySelector('p').innerHTML);
+                moduls.innerHTML = result.length>0 ? result.length>1? `Выбрано ${result.length} модулей`: result[0] : "Отсутсвует";
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+     </script>
+     <div id="add_module" class="modal">
+        <div class="formContent newModule">
+            <a class="close" href="#"><img src="images/cross.svg" alt="cross"></a>
+            <form action="#">
+                <h1>Добавление модуля ПО</h1>
+                <div>
+                    <label for="modul_name">Название:</label>
+                    <input type="text" id="modul_name" name="title" value="Название модуля">
+                </div>
+                <input type="submit" name="send" value="+ Добавить">            
+            </form>
+         </div>
+     </div>
+     <div id="add_PO" class="modal">
+        <div class="formContent newPO">
+            <a href="#"><img src="images/cross.svg" alt="cross"></a>
+            <form action="#">
+                <h1>Добавление ПО</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="PO_name">Название:</label></td>
+                            <td><input type="text" id="PO_name" name="name" value="Название ПО"></td>
+                        </tr>
+                        <div>
+                            <td><label for="moduls">Модули:</label></td>
+                            <td>
+                                <div class="multiselect">
+                                    <div class="selectBox" onclick="showCheckboxes()">
+                                      <select id="moduls">
+                                        <option>Отсутствует</option>
+                                      </select>
+                                      <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkboxes">
+                                        <label for="one">
+                                            <input type="checkbox" id="one"><p>Техническая поддержка</p></label>
+                                        <label for="two">
+                                            <input type="checkbox" id="two"><p>Сбор статистики</p></label>
+                                        <label for="three">
+                                            <input type="checkbox" id="three"><p>Аналитика</p></label>
+                                        <label for="four">
+                                            <input type="checkbox" id="four"><p>Оповещения</p></label>
+                                        <label for="five">
+                                            <input type="checkbox" id="five"><p>Технический модуль</p></label>
+                                        <label for="six">
+                                            <input type="checkbox" id="six"><p>Сотрудники</p></label>
+                                    </div>
+                                  </div>
+                            </td>
+                        </div>
+                    </tbody>
+                </table>
+                <input type="submit" name="send" value="+ Добавить">            
+            </form>
+         </div>
+     </div>
+     <div id="add_license" class="modal">
+        <div class="formContent newLicense">
+            <a href="#"><img src="images/cross.svg" alt="cross"></a>
+            <form action="#">
+                <h1>Добавление лицензии</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="license_number">Номер:</label></td>
+                            <td><input type="text" id="license_number" name="number" value="Номер лицензии"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="license_date" class="date">Дата окончания:</label></td>
+                            <td><input type="text" id="license_date" name="date" value="Дата окончания лицензии"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="workers_count">Сотрудники:</label></td>
+                            <td><input type="text" id="workers_count" name="count" value="Кол-во сотрудников по лицензии"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="PO">ПО:</label></td>
+                            <td>
+                                <select id="PO">
+                                    <option>Eplat4m</option>
+                                    <option>DATAPK</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="submit" name="send" value="+ Добавить">            
+            </form>
+         </div>
+     </div>
+     <div class="navigation">
+        <div class="main"> 
+            <ul>
+                <li>
+                    <a href="MainWindow.html">
+                        <img class="logo" src="images/logo.svg" alt="udv">
+                    </a>
+                </li>
+                <li>
+                    <a href="MainWindowDev.html">
+                        <img class="appeal" src="images/appeal.svg" alt="appeal">
+                    </a>
+                </li>
+                <li>
+                    <a href="PersonalDev.html">
+                        <img class="staff" src="images/staff.svg" alt="staff">
+                    </a>
+                </li>
+                <li>
+                    <a href="CompaniesList.html">
+                        <img class="companies" src="images/companies.svg" alt="companies">
+                    </a>
+                </li>
+                <li>
+                    <a href="Stat.html">
+                        <img class="stat" src="images/stat.svg" alt="stat">
+                    </a>
+                </li>
+                <li>
+                    <a href="Dicts.html">
+                        <img class="dicts" src="images/dicts.svg" alt="dicts">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="page">
+                Справочники
+            </div>
+            <div class="rightMenu">
+               <ul>
+                   <li>
+                       <a href="AccountInfo.html">
+                           <img class="ava" src="images/avatar.svg" alt="avatar">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="login.html">
+                          <img src="images/exit.svg" alt="exit">
+                      </a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+        <div class="content">
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">
+                    <hr>
+                    <div>
+                        <img class="tab-btn-img" src="images/moduls_PO.svg">
+                        <p>Модули ПО</p>
+                    </div>
+                </label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">
+                    <hr>
+                    <div class="tab-btn-2-inside">
+                        <img class="tab-btn-img" src="images/PO.svg">
+                        <p>Программное обеспечение</p>
+                    </div>
+                </label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                <label for="tab-btn-3">
+                    <hr>                    
+                    <div>
+                        <img class="tab-btn-img" src="images/licenses.svg">
+                        <p>Лицензии</p>
+                    </div>
+                </label>
+                <div class="dict_content" id="content-1">
+                    <div class="dict_head">
+                        <form class="search" action="" method="get">
+                            <input name="search" placeholder="Поиск" type="search">
+                        </form>
+                        <form class="report" action="#add_module">
+                            <input type="submit" name="report" value="+ Добавить модуль">
+                        </form>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr class="head">
+                                <th class="name_modul">Название модуля</th>
+                            </tr>
+                            <tr class="modul_PO">
+                                <td class="name_modul">Техническая поддержка</td>
+                            </tr>
+                            <tr class="modul_PO">
+                                <td class="name_modul">Сбор статистики</td>
+                            </tr>
+                            <tr class="modul_PO">
+                                <td class="name_modul">Аналитика</td>
+                            </tr>
+                            <tr class="modul_PO">
+                                <td class="name_modul">Оповещения</td>
+                            </tr>
+                            <tr class="modul_PO">
+                                <td class="name_modul">Технический модуль</td>
+                            </tr>
+                            <tr class="modul_PO">
+                                <td class="name_modul">Сотрудники</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dict_content" id="content-2">
+                    <div class="dict_head">
+                        <form class="search" action="" method="get">
+                            <input name="search" placeholder="Поиск" type="search">
+                        </form>
+                        <form class="report" action="#add_PO">
+                            <input type="submit" name="report" value="+ Добавить ПО">
+                        </form>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr class="head">
+                                <th class="name_PO">Название ПО</th>
+                                <th class = "moduls">Модули</th>
+                            </tr>
+                            <tr class="PO">
+                                <td class="name_PO">Eplat4m</td>
+                                <td class = "moduls">Техническая поддержка, Аналитика, Оповещения</td>
+                            </tr>
+                            <tr class="PO">
+                                <td class="name_PO">DATAPK</td>
+                                <td class = "moduls">Техническая поддержка, Аналитика, Оповещения, Технический модуль, Сотрудники</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dict_content" id="content-3">
+                    <div class="dict_head">
+                        <form class="search" action="" method="get">
+                            <input name="search" placeholder="Поиск" type="search">
+                        </form>
+                        <form class="report" action="#add_license">
+                            <input type="submit" name="report" value="+ Добавить лицензию">
+                        </form>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr class="head">
+                                <th class="license_number">Название модуля</th>
+                                <th class="name_PO">ПО</th>
+                                <th class="users">Пользователи</th>
+                                <th class="expires">Истекает</th>
+                            </tr>
+                            <tr class="license">
+                                <td class="license_number">#1453231</td>
+                                <td class="name_PO">DATAPAK</td>
+                                <td class="users">14/25</td>
+                                <td class="expires">11 января 2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>   
+              </div>
+        </div>
+     </div>
+ </body>
+</html>

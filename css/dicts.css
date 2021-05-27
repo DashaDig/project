@@ -1,0 +1,261 @@
+.modal{
+    background: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.modal:target{
+    display: block;
+}
+.modal .formContent a{
+    float: right;
+}
+.modal form table{
+    text-align: left;
+}
+
+.dicts{
+    background-color: #535353;
+    padding:10px;
+    margin: 46px 0;
+}
+
+.newModule{
+    height: 332px;
+}
+.newPO{
+    height: 398px;
+}
+.modal .newLicense{
+    padding: 19px 19px 62px 22px;
+    height: 521px;
+}
+
+.formContent{
+    text-align: center;
+    width: 515px;
+    padding: 19px 19px 62px 19px;
+}
+.modal form input[type="submit"]{
+    width: auto;
+    height: auto;
+    padding: 12px 22px;
+    margin-top: 44px;
+}
+.modal form input[type="text"]{
+    padding-left: 21px;
+    width: 314px;
+    height: 37px;
+}
+#add_module .formContent form label{
+    color: #989898;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.newPO form table{
+    padding-left: 40px;
+    width: 398px;
+}
+.formContent form h1{
+    margin-top: 54px;
+    margin-bottom: 43px;
+}
+.formContent form td label{
+    padding-right: 0;
+    padding-top: 11px;
+}
+.navbar .page{
+    font-size: 18px;
+    color: #464646;
+    padding-top: 12px;
+    display: flex;
+}
+
+.navigation .content{
+    display: inline-block;
+    text-align: left;
+    padding-top: 44px;
+}
+.newLicense form h1{
+    margin-top: 51px;
+    margin-bottom: 41px;
+}
+.newLicense table{
+    margin-left: 25px;
+    width: 408px;
+}
+.newLicense table td:first-child{
+    width: 100px;
+    max-width: 110px;
+    min-width: 80px;
+    padding-right: 9px;
+}
+.newLicense table tr:last-child td:first-child{
+    padding-right: 11px;
+}
+.newLicense td{
+    max-width: 312px;
+}
+.newLicense table label{
+    max-width: 90px;
+}
+.newLicense table td .date{
+    padding-top: 0;
+}
+.newLicense table td select{
+    width: 212px;
+    height: 37px;
+}
+.newLicense form input[type="submit"]{
+    margin-top: 17px;
+}
+
+.ava img{
+    width: 45px;
+    height: 45px;
+}
+
+.main .appeal{
+    background: none;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+    
+.tabs>input[type="radio"]:checked+label {
+    height: 75px;
+}
+.tabs>input[type="radio"]:checked+label>hr {
+    border: none;
+    display: block;
+}
+.tabs>label>div{
+    padding: 19px 0 0 30px;
+}
+.tabs>label>.tab-btn-2-inside{
+    display: flex;
+    padding: 16px 0 0 30px;
+}
+.tabs>label>div>img,p{
+    display: inline;
+    vertical-align: middle;
+}
+.tabs>label{
+    margin-right: 15px;
+    background-color: #FFF;
+    display: inline-block;
+    width: 250px;
+    border: 1px solid #EAEAEA;
+    height: 70px;
+    vertical-align: bottom;
+}
+.tabs>label>hr{
+    margin: 0;
+    display: none;
+    height: 5px;
+    background: #302E2E;
+}
+.tabs>div {
+    margin-top: 45px;
+    display: none;
+}
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+.tab-btn-img{
+    margin-right: 15px;
+}
+
+.dict_head{
+    width: 458px;
+    display: flex;
+    margin-bottom: 27px;
+}
+.search{
+    margin-right: 62px;
+}
+
+#content-1 form input[type="submit"]{
+    padding: 10px 28px 9px 27px;
+}
+#content-2 form input[type="submit"]{
+    padding: 10px 32px 9px 31px;
+}
+#content-3 form input[type="submit"]{
+    padding: 10px 25px 9px 25px;
+}
+
+table{
+    width: 780px;
+}
+td:first-child, th:first-child{
+    padding-left: 39px;
+}
+.license_number{
+    width: 300px;
+}
+
+.name_PO{
+    min-width: 185px;
+}
+
+.users{
+    min-width: 175px;
+}
+
+.expires{
+    min-width: 196px;
+}
+
+.modul_PO .name_modul, .PO .name_PO, .PO .moduls, .license{
+    height: 65px;
+    background-color: white;
+}
+
+
+.multiselect{
+    width: 259px;
+}
+
+.selectBox{
+    position: relative;
+}
+ 
+.selectBox select{
+    width: 100%;
+    height: 37px;
+    color: #B2B2B2;
+}
+.overSelect{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#checkboxes{
+    overflow: auto;
+    height: 70px;
+    width: 259px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    border: 1px #dadada solid;
+
+}
+#checkboxes label{
+    display: block;  
+    color: black;
+    font-weight: normal;
+}
+
+#checkboxes label input{
+    margin-left: 5px;
+    margin-right: 10px;
+}

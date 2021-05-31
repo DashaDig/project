@@ -156,3 +156,8 @@
     padding: 8px 13px;
     background: #F16D6D;
 }
+
+.organization{
+    grid-column: 4;
+    grid-row: 2;
+}

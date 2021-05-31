@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/personal.css">
+  <link rel="stylesheet" type="text/css" href="css/personalInfo.css">
+  <link rel="stylesheet" type="text/css" href="css/AccountInfo.css">
+ </head>
+ <body>
+    <div id="modal">
+        <div class="formContent newPersonal">
+           <a href="#"><img src="images/cross.svg" alt="cross"></a>
+           <form action="#">
+               <h1>Редактирование профиля</h1>
+               <table>
+                   <tr>
+                       <td><label for="title">ФИО:</label></td>
+                       <td><input type="text" id="title" name="title" value="Иванов Иван Иванович"></td>
+                   </tr>
+                   <tr>
+                        <td><label for="email">Почта:</label></td>
+                        <td>
+                            <input type="email" id="email" name="email" value="Ivanov@ivan.ru">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="license">Лицензия:</label></td>
+                        <td>
+                            <select id="license">
+                                <option>№1453231</option>
+                                <option>№0000000</option>
+                            </select>
+                        </td>
+                    </tr>
+               </table>    
+               <input type="submit" name="send" value="Сохранить">            
+           </form>
+        </div>
+    </div>
+    <div id="modal2">
+        <div class="formContent newPersonal">
+           <a href="#"><img src="images/cross.svg" alt="cross"></a>
+           <form action="#">
+               <h1>Смена пароля</h1>
+               <table>
+                   <tr>
+                       <td><input type="password" id="password" name="password" placeholder="Новый пароль"></td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <input type="password" id="password" name="password" placeholder="Повторите пароль">
+                       </td>
+                   </tr>
+               </table>    
+               <input type="submit" name="send" value="Сохранить">            
+           </form>
+        </div>
+    </div>
+     <div class="navigation">
+        <div class="main"> 
+            <ul>
+                <li>
+                    <a href="MainWindow.html">
+                        <img class="logo" src="images/logo.svg" alt="udv">
+                    </a>
+                </li>
+                <li>
+                    <a href="MainWindow.html">
+                        <img class="appeal" src="images/appeal.svg" alt="appeal">
+                    </a>
+                </li>
+                <li>
+                    <a href="Personal.html">
+                        <img class="staff" src="images/staff.svg" alt="staff">
+                    </a>
+                </li>
+                <li>
+                    <a href="CompanyInfo.html">
+                        <img class="settings" src="images/settings.svg" alt="settings">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="page">Личный кабинет</div>
+            <div class="rightMenu">
+               <ul>
+                   <li>
+                       <a href="AccountInfo.html">
+                           <img class="ava" src="images/avatar.svg" alt="avatar">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="login.html">
+                          <img src="images/exit.svg" alt="exit">
+                      </a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+        <div class="content">
+            <div class="thatReport">
+                <div class="user">
+                    <div class="ava">
+                        <img src="images/avatar.svg" alt="avatar">
+                    </div>
+                    <div class="name">
+                        <div class="nametop">
+                            <h1>Иванов Иван Иванович</h1>
+                            <form class="edit" action="#modal">
+                                <input type="submit" name="edit" value=""  >
+                            </form>
+                        </div>
+                        <div class="status acting">Действующий</div>
+                    </div>
+                </div>
+                <div class="personalInfo">
+                    <table>
+                        <tr>
+                            <td class="start">Электронная почта:</td>
+                            <td>Ivanov@ivan.ru</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Дата регистрации:</td>
+                            <td >02.02.2020</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Роль</td>
+                            <td>Владелец</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Лицензия:</td>
+                            <td >№1453231</td>
+                        </tr>
+                    </table>
+                    <div class="control">
+                        <h1>Управление:</h1>
+                        <form class="change" action="#modal2">
+                            <input class="first" type="submit" name="change" value="Сменить пароль"  >
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="organization">
+                <div class="user">
+                    <div class="ava">
+                        <img src="images/organization.svg" alt="organization">
+                    </div>
+                    <div class="name">
+                        <div class="nametop">
+                            <h1>ООО "Крокодилы"</h1>
+                        </div>
+                        <div class="status acting">Действующая</div>
+                    </div>
+                </div>
+                <div class="personalInfo">
+                    <table>
+                        <tr height="38px">
+                            <td class="start"><p>Владелец:</p></td>
+                            <td class="otvetsvenni">
+                                <img src="images/avatar.svg">
+                                <p>Иванов Иван</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr height="38px">
+                            <td class="start"><p>Лицензия:</p></td>
+                            <td class="license">
+                                <p class="tdText">№1453231</p>
+                                <p class="status">DATAPK</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="start dop"><p>Пользователи:</p></td>
+                            <td><p>14/25</p></td>
+                        </tr>
+                        <tr>
+                            <td class="start dop"><p>Истекает:</p></td>
+                            <td ><p>11 января 2022</p></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr height="38px">
+                            <td class="start"><p>Лицензия:</p></td>
+                            <td class="license">
+                                <p class="tdText">№1453231</p>
+                                <p class="status">DATAPK</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="start dop"><p>Пользователи:</p></td>
+                            <td><p>14/25</p></td>
+                        </tr>
+                        <tr>
+                            <td class="start dop"><p>Истекает:</p></td>
+                            <td ><p>11 января 2022</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+     </div>
+ </body>
+</html>

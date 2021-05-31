@@ -126,7 +126,7 @@ input::-webkit-input-placeholder {
 
 .formContent{
     width: 897px;
-    height: 724px;
+    height: 780px;
     border: 1px solid #EAEAEA;
     position: absolute;
     top: 0;
@@ -326,13 +326,6 @@ input::-webkit-input-placeholder {
     vertical-align: 9px;
 }
 
-
-.organization{
-    background: green;
-    grid-row:1/4;
-    grid-column:6;
-}
-
 .status{
     width: 130px;
     height: 23px;
@@ -341,4 +334,125 @@ input::-webkit-input-placeholder {
     color: #BF9557;
     background: #FFF2CC;
     text-align: center;
+}
+
+
+.rating {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    position: relative;
+}
+  
+.rating > input {
+    display: none;
+}
+  
+.rating > label {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/star.svg);
+    background-repeat: no-repeat;
+    background-size: 76%;
+    transition: .3s;
+}
+    
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url(../images/stargold.svg);
+}
+
+.organization{
+    height: 421px;
+    background: white;
+    border: 1px solid #EAEAEA;
+    padding: 38px 40px;
+    text-align: left;
+    color: #464646;
+    grid-row:1/4;
+    grid-column:6;
+    font-size: 14px;
+}
+
+.organization p{
+    font-size: 14px;
+}
+
+.organization .name .status{
+    margin-top: 12px;
+    background: #DAFAD8;
+    color: #8FC274;
+    width: 115px;
+}
+
+.organization .license .status{
+    font-size: 12px;
+}
+
+.organization .personalInfo {
+    padding: 15px 0 0 0;
+}
+
+.organization .personalInfo table {
+    border-spacing: 9px;
+}
+
+.organization .personalInfo table .status{
+    width: 74px;
+    padding-top: 6px;
+    margin: 9px 10px 0 0;
+}
+.organization .otvetsvenni{
+    padding-top: 4px;
+}
+
+.organization .otvetsvenni, .license{
+    display: flex;
+}
+
+.organization .otvetsvenni p{
+    padding: 5px 0 0 10px;
+}
+
+.organization .tdText{
+    padding: 11px 12px 0 0;
+}
+
+.organization .user{
+    color: #464646;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.organization .ava img{
+    width: 55px;
+    height: 55px;
+}
+
+.organization .start{
+    color: #A6A6A6;
+    font-weight: 500;
+    width: 95px;
+}
+
+.organization .dop{
+    font-weight: normal;
+}
+
+.organization .name{
+    padding-left: 17px;
+    float: left;
+    color: #464646;
+}
+
+.organization .name h1{
+    font-weight: normal;
+    font-size: 18px;
+    grid-row: 1;
+    grid-column:2;
+    padding-right: -20px;
 }

@@ -4,64 +4,25 @@
   <title></title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/personalInfo.css">
   <link rel="stylesheet" type="text/css" href="css/CompanyInfo.css">
  </head>
  <body>
-     <div id="modal">
-         <div class="formContent">
-            <a href="#"><img src="images/cross.svg" alt="cross"></a>
-            <form action="#">
-                <h1>Новое обращение</h1>
-                <table>
-                    <tr>
-                        <td><label for="title">Тема:</label></td>
-                        <td><input type="text" id="title" name="title" value="Тема Обращения"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="PO">ПО:</label></td>
-                        <td>
-                            <select id="PO">
-                                <option>DATAPK</option>
-                                <option>Eplat4m</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="ModalPO">Модуль ПО:</label></td>
-                        <td>
-                            <select id="ModalPO">
-                                <option>Техническое обслуживание</option>
-                                <option>smth else</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p><label for="date">Дата:</label></p></td>
-                        <td><span id="date">22 апреля 2021</span></td>
-                    </tr>
-                    <tr>
-                        <td><label for="problem">Описание:</label></td>
-                        <td><textarea type="text" id="problem" name="problem" >Описание проблемы</textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td id="vlosenia"><h1>Вложения:</h1></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td id="chous">
-                            <label for="file" class="chous">Прикрепить файл</label>
-                            <input type="file" id="file">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" name="send" value="Отправить"></td>
-                    </tr>
-                </table>                
-            </form>
-         </div>
-     </div>
+    <div id="modal">
+        <div class="formContent newPersonal">
+           <a href="#"><img src="images/cross.svg" alt="cross"></a>
+           <form action="#">
+               <h1>Редактирование профиля организации</h1>
+               <table>
+                   <tr>
+                       <td><label for="title">Название:</label></td>
+                       <td><input type="text" id="title" name="title" placeholder="Название организации"></td>
+                   </tr>
+               </table>    
+               <input type="submit" name="send" value="Сохранить">            
+           </form>
+        </div>
+    </div>
      <div class="navigation">
         <div class="main"> 
             <ul>
@@ -104,7 +65,106 @@
               </ul>
            </div>
         </div>
-        
+        <div class="content">
+            <a href="Personal.html">
+                <img src="images/arrow.svg" alt="arrow">Назад
+            </a>
+            <div class="organization">
+                <div class="user">
+                    <div class="ava">
+                        <img src="images/organization.svg" alt="organization">
+                    </div>
+                    <div class="name">
+                        <div class="nametop">
+                            <h1>ООО "Крокодилы"</h1>
+                            <form class="edit" action="#modal">
+                                <input type="submit" name="edit" value=""  >
+                            </form>
+                        </div>
+                        <div class="status acting">Действующая</div>
+                    </div>
+                </div>
+                <div class="personalInfo">
+                    <table>
+                        <tr height="38px">
+                            <td class="start">Владелец:</td>
+                            <td class="otvetsvenni">
+                                <img src="images/avatar.svg">
+                                <p>Иванов Иван</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr height="38px">
+                            <td class="start">Лицензия:</td>
+                            <td class="license">
+                                <p class="tdText">№1453231</p>
+                                <p class="status">DATAPK</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="start dop">Пользователи:</td>
+                            <td>14/25</td>
+                        </tr>
+                        <tr>
+                            <td class="start dop">Истекает:</td>
+                            <td >11 января 2022</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr height="38px">
+                            <td class="start">Лицензия:</td>
+                            <td class="license">
+                                <p class="tdText">№1453231</p>
+                                <p class="status">DATAPK</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="start dop">Пользователи:</td>
+                            <td>14/25</td>
+                        </tr>
+                        <tr>
+                            <td class="start dop">Истекает:</td>
+                            <td >11 января 2022</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="thatReport">
+                <div class="user">
+                    <div class="ava">
+                        <img src="images/avatar.svg" alt="avatar">
+                    </div>
+                    <div class="name">
+                        <div class="nametop">
+                            <h1>Иванов Иван Иванович</h1>
+                        </div>
+                        <div class="status acting">Действующий</div>
+                    </div>
+                </div>
+                <div class="personalInfo">
+                    <table>
+                        <tr>
+                            <td class="start">Электронная почта:</td>
+                            <td>Ivanov@ivan.ru</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Дата регистрации:</td>
+                            <td >02.02.2020</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Роль</td>
+                            <td>Владелец</td>
+                        </tr>
+                        <tr>
+                            <td class="start">Лицензия:</td>
+                            <td >№1453231</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
      </div>
  </body>
 </html>

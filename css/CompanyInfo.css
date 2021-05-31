@@ -1,5 +1,10 @@
-.main .appeal{
+.main .staff{
     background: none;
+}
+
+.navigation .content {
+    grid-template: 39px auto 2.4% 1.2fr 72px / 66px 545px 1.08% 535px;
+    padding: 20px 0 0 74px;
 }
 
 .settings{
@@ -7,3 +12,95 @@
     padding:10px;
     margin: 46px 0;
 }
+
+.organization{
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.thatReport{
+    height: 396px;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.content .organization{
+    height: auto;
+}
+
+.organization .user .ava img{
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+}
+
+.organization .name h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.organization .nametop{
+    padding-bottom: 6px;
+}
+
+.name .acting{
+    background: #DAFAD8;
+    color: #8FC274;
+    width: 115px;
+}
+
+.organization .status{
+    font-size: 12px;
+}
+
+.organization .start {
+    width: 175px;
+    padding-right: 65px;
+}
+
+.organization .personalInfo{
+    padding: 36px 0 0 98px;
+}
+
+.personalInfo p{
+    font-size: 16px;
+
+}
+
+.edit input[type=submit]{
+    background: url(../images/edit.svg);
+    background-size:100% 100%;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 3px 20px;
+}
+
+.thatReport .name{
+    padding-left: 28px;
+}
+
+.thatReport .personalInfo{
+    padding: 22px 0 0 78px;
+}
+
+#modal .newPersonal{
+    padding: 20px 17px 62px 56px;
+    width: 515px;
+    height: 303px;
+    text-align: center;
+}
+
+.formContent form h1 {
+    margin: 39px 40px 35px 0;
+}
+
+.newPersonal form input[type="text"] {
+    width: 312px;
+}
+
+.newPersonal form input[type="submit"] {
+    width: 27%;
+}
+

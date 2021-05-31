@@ -9,3 +9,7 @@
 .newPersonal{
     height: 372px;
 }
+
+.table td{
+    cursor: default;
+}

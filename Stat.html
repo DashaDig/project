@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/dicts.css">
+  <link rel="stylesheet" type="text/css" href="css/stat.css">
+ </head>
+ <body>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+     <script>
+        //  Слайдер
+        let expanded = false;
+        
+        function showCheckboxes() {
+            let checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                let moduls = document.querySelector('#moduls>option');
+                let modulsList = document.querySelectorAll('#checkboxes>label');
+                result = [];
+                for(let modul of modulsList)
+                    if(modul.querySelector('input').checked)
+                        result.push(modul.querySelector('p').innerHTML);
+                moduls.innerHTML = result.length>0 ? result.length>1? `Выбрано ${result.length} модулей`: result[0] : "Отсутсвует";
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+
+        // Первый график
+        
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        
+        google.charts.setOnLoadCallback(drawBasic);
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawBasic() {
+            var data = google.visualization.arrayToDataTable([
+                ['ПО', 'Обращения',{ role: 'annotation' },{ role: 'style' }],
+                ['DATAPK', 25, 25, "color:#00D29D"],
+                ['Eplat4m', 15, 15, "color:#00D29D"],
+                ['Smth', 10, 10, "color:#00D29D"],
+                ['Smth', 6, 6, "color:#00D29D"],
+                ['Smth', 3, 3, "color:#00D29D"],
+                ['Smth', 1, 1, "color:#00D29D"]
+            ]);
+            var options = {
+                legend: { position: 'none' },
+                chartArea:{
+                    width: '50%',
+                    top:75,
+                    left:110
+                },
+                backgroundColor:{fill:'none'},
+                annotations: {
+                    textStyle: 
+                    {
+                        fontName:"Roboto",
+                        fontSize: 12
+                    }
+                },
+                width: 500,
+                height: 500,
+                tooltip: {trigger:'none'},
+                vAxis: {textStyle:{color: '#464646'}},
+                hAxis: {
+                    title: 'Total Population',
+                    minValue: 0,
+                    gridlines: {minSpacing: 0},
+                    baselineColor:'none'
+                },
+            };
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+
+            // Второй график
+            var data2 = google.visualization.arrayToDataTable([
+                ['Модуль', 'Обращения',{ role: 'annotation' },{ role: 'style' }],
+                ['Техническая поддержка', 12, 12, "color:#00D29D"],
+                ['Сбор статистики', 9, 9, "color:#00D29D"],
+                ['Аналитика', 7, 7, "color:#00D29D"],
+                ['Оповещения', 4, 4, "color:#00D29D"],
+                ['Технический модуль', 2, 2, "color:#00D29D"],
+                ['Сотрудники', 1, 1, "color:#00D29D"]
+            ]);
+
+            var chart2 = new google.visualization.BarChart(document.getElementById('chart_div2'));
+            chart2.draw(data2, options);
+        }
+
+            // Круг
+            function drawChart() {
+                
+                var dataPie = google.visualization.arrayToDataTable([
+                ['Статус', 'Количество'],
+                ['Новое',     7],
+                ['Зарегистрировано',      14],
+                ['Переоткрыто',  10],
+                ['В работе', 9],
+                ['Закрыто',  3],
+                ['Отклонено',    2]
+            ]);
+        
+            var optionsPie = {
+                backgroundColor:{fill:'none'},
+                colors:['#2EE6A7','#FFDE68','#907BD9','#2EA2F9','#A6A6A6','#FD667C'],
+                pieSliceText: 'value',
+                pieHole: 0.7,
+                chartArea:{left:20, top:80},
+                legend:{alignment:"center"},
+            };
+        
+            var chart3 = new google.visualization.PieChart(document.getElementById('piechart'));
+        
+            chart3.draw(dataPie, optionsPie);
+        }
+     </script>
+     <div class="navigation">
+        <div class="main"> 
+            <ul>
+                <li>
+                    <a href="MainWindowDev.html">
+                        <img class="logo" src="images/logo.svg" alt="udv">
+                    </a>
+                </li>
+                <li>
+                    <a href="MainWindowDev.html">
+                        <img class="appeal" src="images/appeal.svg" alt="appeal">
+                    </a>
+                </li>
+                <li>
+                    <a href="PersonalDev.html">
+                        <img class="staff" src="images/staff.svg" alt="staff">
+                    </a>
+                </li>
+                <li>
+                    <a href="CompaniesList.html">
+                        <img class="companies" src="images/companies.svg" alt="companies">
+                    </a>
+                </li>
+                <li>
+                    <a href="Stat.html">
+                        <img class="stat" src="images/stat.svg" alt="stat">
+                    </a>
+                </li>
+                <li>
+                    <a href="Dicts.html">
+                        <img class="dicts" src="images/dicts.svg" alt="dicts">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="page">
+                Статистика
+            </div>
+            <div class="rightMenu">
+               <ul>
+                   <li>
+                       <a href="AccountInfoDev.html">
+                           <img class="ava" src="images/avatar.svg" alt="avatar">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="login.html">
+                          <img src="images/exit.svg" alt="exit">
+                      </a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+        <div class="content">
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">
+                    <hr>
+                    <div>
+                        <img class="tab-btn-img" src="images/appeal.svg" alt="appeal">
+                        <p>Обращения</p>
+                    </div>
+                </label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">
+                    <hr>
+                    <div>
+                        <img class="tab-btn-img" src="images/companies.svg" alt="companies">
+                        <p>Заказчики</p>
+                    </div>
+                </label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                <label for="tab-btn-3">
+                    <hr>                    
+                    <div>
+                        <img class="tab-btn-img" src="images/staff.svg" alt="staff">
+                        <p>Разработчики</p>
+                    </div>
+                </label>
+                <div class="dict_content" id="content-1">
+                    <div class="first graf">
+                        <span>Распределение обращений по ПО</span>
+                        <div id="chart_div"></div>
+                    </div>
+                    <div class="second graf">
+                        <span>Распределение обращений по модулям</span>
+                        <div id="chart_div2"></div>
+                    </div>
+                    <div class="third graf">
+                        <span>Распределение обращений по статусам</span>
+                        <div id="piechart" style="width: 640px; height: 630px;"></div>
+                    </div>
+                </div>
+                <div class="dict_content" id="content-2">
+                    <div class="tables">
+                        <table class="table">
+                            <tbody>
+                                <tr class="head">
+                                    <th class="name_PO">Организация</th>
+                                    <th class = "moduls">Обращения</th>
+                                </tr>
+                                <tr class="PO">
+                                    <td class="name_PO">
+                                        <img src="images/organization.svg" alt="organization">
+                                        <p>ООО "Крокодилы"</p>
+                                    </td>
+                                    <td class = "moduls">
+                                        <p>45</p>
+                                        <div class="round">7</div>
+                                        <div class="line"></div>
+                                        <div class="round blue">33</div>
+                                        <div class="line blue2"></div>
+                                        <div class="round gray">3</div>
+                                        <div class="line gray2"></div>
+                                        <div class="round red">2</div>
+                                    </td>
+                                </tr>
+                                <tr class="PO">
+                                    <td class="name_PO">
+                                        <img src="images/organization.svg" alt="organization">
+                                        <p>ООО "Крокодилы"</p>
+                                    </td>
+                                    <td class = "moduls">
+                                        <p>45</p>
+                                        <div class="round">7</div>
+                                        <div class="line"></div>
+                                        <div class="round blue">33</div>
+                                        <div class="line blue2"></div>
+                                        <div class="round gray">3</div>
+                                        <div class="line gray2"></div>
+                                        <div class="round red">2</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="rightBlock">
+                            <tbody>
+                                <tr class="PO">
+                                    <td>
+                                        <div class="point"></div>
+                                    </td>
+                                    <td class = "name_point">
+                                        <p>Новое</p>
+                                    </td>
+                                </tr>
+                                <tr class="PO">
+                                    <td>
+                                        <div class="point blue"></div>
+                                    </td>
+                                    <td class = "name_point">
+                                        <p>Зарегистрировано/Переоткрыто/В работе</p>
+                                    </td>
+                                </tr>
+                                <tr class="PO">
+                                    <td>
+                                        <div class="point gray"></div>
+                                    </td>
+                                    <td class = "name_point">
+                                        <p>Закрыто</p>
+                                    </td>
+                                </tr>
+                                <tr class="PO">
+                                    <td>
+                                        <div class="point red"></div>
+                                    </td>
+                                    <td class = "name_point">
+                                        <p>Отклонено</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="dict_content" id="content-3">
+                    <div class="tables">
+                        <table class="table">
+                            <tbody>
+                                <tr class="head">
+                                    <th class="name_PO">Сотрудник</th>
+                                    <th class = "moduls">Обращения</th>
+                                </tr>
+                                <tr class="PO">
+                                    <td class="name_PO">
+                                        <img src="images/avatar.svg" alt="avatar">
+                                        <p>Иванов Иван</p>
+                                    </td>
+                                    <td class = "moduls">
+                                        <p>45</p>
+                                        <div class="round blue">33</div>
+                                        <div class="line blue2"></div>
+                                        <div class="round red">12</div>
+                                    </td>
+                                </tr>
+                                <tr class="PO">
+                                    <td class="name_PO">
+                                        <img src="images/avaKostya.svg" alt="avatar">
+                                        <p>Кочергин Константин</p>
+                                    </td>
+                                    <td class = "moduls">
+                                        <p>45</p>
+                                        <div class="round blue">33</div>
+                                        <div class="line blue2"></div>
+                                        <div class="round red">12</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="rightBlock">
+                            <tbody>
+                                <tr class="PO">
+                                    <td>
+                                        <div class="point blue"></div>
+                                    </td>
+                                    <td class = "name_point">
+                                        <p>Зарегистрировано/Переоткрыто/В работе</p>
+                                    </td>
+                                </tr>
+                                <tr class="PO">
+                                    <td>
+                                        <div class="point red"></div>
+                                    </td>
+                                    <td class = "name_point">
+                                        <p>Закрыто/Отклонено</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>   
+              </div>
+        </div>
+     </div>
+ </body>
+</html>

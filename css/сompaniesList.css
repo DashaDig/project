@@ -1,3 +1,11 @@
+#modal .newPersonal{
+    height: 368px;
+}
+
+#modal2 .newPersonal{
+    height: 426px;
+}
+
 .main .staff{
     background: none;
 }

@@ -1,3 +1,12 @@
+
+.navigation {
+    grid-template: 80px 100vh / 100px 1fr;
+}
+
+.main{
+    height: 100%;
+}
+
 .navigation .content{
     grid-template: 39px auto 2.4% 478px auto 72px / 66px 56% 1.08% 29%;
 }

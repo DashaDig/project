@@ -29,10 +29,10 @@
                         </td>
                     </tr>
                 </table>
-                <form class="report" action="#modal2">
-                    <input type="submit" name="next" value="Далее"> 
-                </form>  
             </form>
+            <form class="report" action="#modal2">
+                <input type="submit" name="next" value="Далее"> 
+            </form>  
          </div>
      </div>
      <div id="modal2">
@@ -51,8 +51,18 @@
                             <input type="email" id="email" name="email" placeholder="Электронная почта">
                         </td>
                     </tr>
+                    <tr>
+                        <td><label for="license">Лицензия:</label></td>
+                        <td>
+                            <select id="license">
+                                <option>Отсутствует</option>
+                                <option>№1453231</option>
+                                <option>№0000000</option>
+                            </select>
+                        </td>
+                    </tr>
                </table>    
-               <input type="submit" name="send" value="Далее">            
+               <input type="submit" name="send" value="+ Добавить">            
            </form>
         </div>
     </div>
@@ -60,7 +70,7 @@
         <div class="main"> 
             <ul>
                 <li>
-                    <a href="MainWindow.html">
+                    <a href="MainWindowDev.html">
                         <img class="logo" src="images/logo.svg" alt="udv">
                     </a>
                 </li>
@@ -96,7 +106,7 @@
             <div class="rightMenu">
                <ul>
                    <li>
-                       <a href="AccountInfo.html">
+                       <a href="AccountInfoDev.html">
                            <img class="ava" src="images/avatar.svg" alt="avatar">
                       </a>
                   </li>
@@ -123,7 +133,7 @@
                     <th class="tColumn">Владелец</th>
                     <th class="foColumn">Представители</th>
                 </tr>
-                <tr class="report1" onclick="window.location.href='PersonalInfo.html'; return false">
+                <tr class="report1" onclick="window.location.href='CompanyInfoDev.html'; return false">
                     <td class="emptyColumn"></td>
                     <td class="fColumn">
                         <img src="images/organization.svg" alt="organization">

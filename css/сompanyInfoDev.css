@@ -1,0 +1,88 @@
+.main .staff{
+    background: none;
+}
+
+.newPersonal {
+    width: 515px;
+    height: 303px;
+    padding: 19px 19px 58px 19px;
+    text-align: center;
+}
+
+.companies{
+    background-color: #535353;
+    padding:10px;
+    margin: -10px 0;
+}
+
+.navigation .content {
+    grid-template: 39px 415px 241px 2.4% 1.2fr 72px / 66px 546px 1.08% 535px;
+}
+
+.thatReport {
+    grid-row: 2/4;
+}
+
+.name {
+    padding-left: 28px;
+}
+
+.personalInfo {
+    padding: 50px 0 0 98px;
+}
+
+.personalInfo table {
+    border-spacing: 9px;
+}
+
+.personalInfo table .status{
+    width: 74px;
+    padding-top: 6px;
+    margin: 9px 10px 0 0;
+}
+.otvetsvenni{
+    padding-top: 4px;
+}
+
+.otvetsvenni, .license{
+    display: flex;
+}
+
+
+
+.otvetsvenni p{
+    padding: 5px 0 0 10px;
+}
+
+.tdText{
+    padding: 11px 12px 0 0;
+}
+
+
+.dop{
+    font-weight: normal;
+}
+
+.control{
+    padding: 40px 0 0 10px;
+}
+
+.organization {
+    grid-row: 2;
+    grid-column: 4;
+    background: white;
+    border: 1px solid #EAEAEA;
+    padding: 42px 0 38px 50px;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 14px;
+}
+
+.organization table {
+    border-spacing: 30px;
+}
+
+.organization .personalInfo {
+    padding: 40px 0 0 79px;
+}
